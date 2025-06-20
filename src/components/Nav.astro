@@ -6,7 +6,7 @@ import siteConfig from '../data/site-config';
 const navLinks = siteConfig.headerNavLinks || [];
 ---
 
-<nav class="min-h-10 pt-4 pb-12 relative sm:min-h-14 sm:pb-24 md:pt-8">
+<nav class="min-h-10 pt-4 pb-6 relative sm:min-h-14 sm:pb-12 md:pt-8">
     {
         navLinks.length > 0 && (
             <div class="w-full max-w-3xl mx-auto relative">
@@ -27,6 +27,8 @@ const navLinks = siteConfig.headerNavLinks || [];
                             <NavLink
                                 class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
                                 href={link.href}
+                                target={link.target}
+                                rel={link.target === '_blank' ? 'noopener noreferrer' : undefined}
                             >
                                 {link.text}
                             </NavLink>

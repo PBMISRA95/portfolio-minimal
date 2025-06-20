@@ -8,22 +8,34 @@ const hero = siteConfig.hero;
 
 {
     (hero?.title || hero?.image?.src || hero?.text || (hero?.actions && hero.actions.length > 0)) && (
-        <section class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
-            {hero.title && <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{hero.title}</h1>}
-            {hero.image?.src && (
-                <figure>
-                    <img class="w-full" src={hero.image.src} loading="lazy" decoding="async" alt={hero.image.alt || ''} />
-                    {hero.image.caption && <figcaption class="mt-1.5 text-xs sm:text-sm">{hero.image.caption}</figcaption>}
-                </figure>
-            )}
-            {hero.text && <div class="max-w-none prose sm:prose-lg" set:html={marked.parse(hero.text)} />}
-            {hero.actions && hero.actions.length > 0 && (
-                <div class="flex flex-wrap gap-4">
-                    {hero.actions.map((action) => (
-                        <Button href={action.href}>{action.text}</Button>
-                    ))}
+        <section class="w-full mb-16 sm:mb-24">
+            <!-- Full-width title -->
+            {hero.title && <h1 class="text-3xl leading-tight font-serif font-medium sm:text-4xl lg:text-5xl sm:leading-tight mb-8 lg:mb-12" style="white-space: pre-line;">{hero.title}</h1>}
+            
+            <!-- Two-column layout: Text left, Image right -->
+            <div class="flex flex-col lg:flex-row lg:items-start lg:gap-12 xl:gap-16">
+                <!-- Left side: Text content -->
+                <div class="flex-1 space-y-6 lg:space-y-8">
+                    {hero.text && <div class="max-w-none prose sm:prose-lg lg:prose-xl" set:html={marked.parse(hero.text)} />}
+                    {hero.actions && hero.actions.length > 0 && (
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            {hero.actions.map((action) => (
+                                <Button href={action.href}>{action.text}</Button>
+                            ))}
+                        </div>
+                    )}
                 </div>
-            )}
+                
+                <!-- Right side: Image -->
+                {hero.image?.src && (
+                    <div class="flex-shrink-0 mt-8 lg:mt-0">
+                        <figure class="flex justify-center">
+                            <img class="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-cover rounded-lg shadow-lg" src={hero.image.src} loading="lazy" decoding="async" alt={hero.image.alt || ''} />
+                            {hero.image.caption && <figcaption class="mt-1.5 text-xs sm:text-sm text-center">{hero.image.caption}</figcaption>}
+                        </figure>
+                    </div>
+                )}
+            </div>
         </section>
     )
 }

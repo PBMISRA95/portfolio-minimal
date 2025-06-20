@@ -1,68 +1,61 @@
-# Dante - Astro & Tailwind CSS Theme by justgoodui.com
+# Priyabrat Mishra - Personal Portfolio & Blog
 
-Dante is a single-author blog and portfolio theme for Astro.js. Featuring a minimal, slick, responsive and content-focused design. For more Astro.js themes please check [justgoodui.com](https://justgoodui.com/).
+A modern, minimal portfolio and blog website built with Astro.js and Tailwind CSS. This site showcases my work as a Machine Learning Engineer, featuring my projects, blog posts, and professional experience.
 
-![Dante Astro.js Theme](public/dante-preview.jpg)
+🌐 **Live Site:** [https://priyabratmishra.com](https://priyabratmishra.com)
 
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JustGoodUI/dante-astro-theme)
+## About
 
-If you click this☝️ button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+I'm Priyabrat Mishra, a Machine Learning Engineer dedicated to collaboration and artificial intelligence. This website serves as my digital portfolio where I share my coding endeavors, technical insights, and professional journey.
 
-## Theme Features:
+## Features
 
 - ✅ Dark and light color mode
-- ✅ Hero section with bio
-- ✅ Portfolio collection
-- ✅ Pagination support
-- ✅ Post tags support
-- ✅ Subscription form
-- ✅ View transitions
-- ✅ Tailwind CSS
-- ✅ Mobile-first responsive layout
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+- ✅ Responsive hero section with professional bio
+- ✅ Skills showcase with categorized expertise
+- ✅ Project portfolio with detailed case studies
+- ✅ Technical blog with pagination
+- ✅ Contact page for professional inquiries
+- ✅ Resume download functionality
+- ✅ Tag-based content organization
+- ✅ SEO-optimized with meta tags and OpenGraph
+- ✅ RSS feed for blog content
+- ✅ Mobile-first responsive design
 
-## Template Integrations
+## Tech Stack
 
-- @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
-- @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
-- @astrojs/mdx - https://docs.astro.build/en/guides/markdown-content/
-- @astrojs/rss - https://docs.astro.build/en/guides/rss/
+- **Framework:** Astro.js
+- **Styling:** Tailwind CSS
+- **Content:** Markdown & MDX
+- **Deployment:** [Netlify]
+- **Package Manager:** npm
 
 ## Project Structure
 
-Inside of Dante Astro theme, you'll see the following folders and files:
-
 ```text
 ├── public/
+│   ├── Profile_pic_c.jpg
+│   ├── cvF_p_mishra.pdf
+│   └── project-images/
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── data/
-│   ├── icons/
-│   ├── layouts/
-│   ├── pages/
-│   ├── styles/
-│   └── utils/
+│   ├── components/
+│   ├── content/
+│   │   ├── blog/
+│   │   ├── pages/
+│   │   └── projects/
+│   ├── data/
+│   │   └── site-config.ts
+│   ├── layouts/
+│   ├── pages/
+│   └── styles/
 ├── astro.config.mjs
 ├── package.json
-├── README.md
 └── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Development
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro (`.astro`) components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## Astro.js Commands
-
-All commands are run from the root of the project, from a terminal:
+All commands are run from the root of the project:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -71,21 +64,24 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Want to learn more about Astro.js?
+## Content Management
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Blog posts:** Add new `.md` files to `src/content/blog/`
+- **Projects:** Add new `.md` files to `src/content/projects/`
+- **Pages:** Static pages are in `src/content/pages/`
+- **Site configuration:** Update `src/data/site-config.ts`
 
-## Credits
+## Connect
 
-- Demo content generate with [Chat GPT](https://chat.openai.com/)
-- Images for demo content from [Unsplash](https://unsplash.com/)
-
-## Astro Themes by Just Good UI
-
-- [Ovidius](https://github.com/JustGoodUI/ovidius-astro-theme) is a free single author blog theme.
+- **LinkedIn:** [https://www.linkedin.com/in/mishra-priyabrat/](https://www.linkedin.com/in/mishra-priyabrat/)
+- **GitHub:** [https://github.com/PBMISRA95](https://github.com/PBMISRA95)
+- **Email:** [priyabrat.mishra.official@gmail.com](mailto:priyabrat.mishra.official@gmail.com)
 
 ## License
 
-Licensed under the [GPL-3.0](https://github.com/JustGoodUI/dante-astro-theme/blob/main/LICENSE) license.
+This project is based on the Dante Astro theme and is licensed under the [GPL-3.0](LICENSE) license.
+
+---
+
+*Built with ❤️ using Astro.js and Tailwind CSS*
