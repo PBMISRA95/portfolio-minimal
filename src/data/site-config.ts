@@ -99,7 +99,7 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         title: 'Hi there!\n I am Priyabrat Mishra, glad to have you here!',
-        text: "I'm **Priyabrat Mishra**, a Machine Learning Engineer, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting research, and engineering AI solutions as a catalyst for exceptional products. Feel free to explore some of my coding endeavors on <a href='https://github.com/PBMISRA95'>GitHub</a> or connect with me on <a href='https://www.linkedin.com/in/mishra-priyabrat/'>LinkedIn</a>.",
+        text: "I'm a Machine Learning Engineer with a passion for creating AI solutions that solve real-world problems. The central Mantra of life for me is Balance – whether I'm training models, exploring new countries, hitting the yoga mat, cheering for my favorite teams, or trying out a new recipe. I believe that diverse experiences make us better engineers and more creative problem-solvers. Let's connect! Check out my code on <a href='https://github.com/PBMISRA95'>GitHub</a> or reach out on <a href='https://www.linkedin.com/in/mishra-priyabrat/'>LinkedIn</a>.",
         image: {
             src: '/Profile_pic_c.jpg',
             alt: 'My introduction picture'
